@@ -1,21 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Bot, TrendingUp, Zap } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen relative flex items-center pt-16 overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-gradient-hero opacity-95"
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-br from-background/50 to-primary/5" />
-      <div className="container mx-auto px-4 py-20 relative z-10">
+    <section className="min-h-screen bg-gradient-hero flex items-center pt-16">
+      <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
